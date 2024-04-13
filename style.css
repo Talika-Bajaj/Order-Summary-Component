@@ -1,125 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 :root {
-    
-/* Primary */
+  /* Primary */
 
---Pale_blue: hsl(225, 100%, 94%);
---Bright_blue: hsl(245, 75%, 52%);
+  --Pale_blue: hsl(225, 100%, 94%);
+  --Bright_blue: hsl(245, 75%, 52%);
 
-/* Neutral */
-
---dark_pale_blue: hsl(225, 100%, 98%);
---Desaturated_blue: hsl(224, 23%, 55%);
---Dark_blue: hsl(223, 47%, 23%);
+  /* Neutral */
+  --dark_pale_blue: hsl(225, 100%, 98%);
+  --Desaturated_blue: hsl(224, 23%, 55%);
+  --Dark_blue: hsl(223, 47%, 23%);
 }
 
-
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('images/pattern-background-desktop.svg') no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("images/pattern-background-desktop.svg") no-repeat;
 }
 
 .card {
-    border: 2px solid red;
-    width: 400px;
-    border-radius: 18px;
-    background-color: #fff;
+  border: 2px solid red;
+  width: 400px;
+  border-radius: 18px;
+  background-color: #fff;
 }
 
 .image img {
-    width: 100%;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+  width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .data {
-    padding: 30px; 
-    /* justify-content: center; */
-    align-items: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;  
+  padding: 30px;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .data p {
-    text-align: center;
-    color: var(--Desaturated_blue);
-    font-weight: 500;
+  text-align: center;
+  color: var(--Desaturated_blue);
+  font-weight: 500;
 }
 
 .show {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--dark_pale_blue);
-    padding: 15px 25px 15px 12px;
-    border-radius: 18px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark_pale_blue);
+  padding: 15px 25px 15px 12px;
+  border-radius: 18px;
 }
 
 .one {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
 .display {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .display .head {
-    font-weight: 900;
-    color: black;
+  font-weight: 900;
+  color: black;
 }
 
 .show a {
-    color: var(--Bright_blue);
-    font-weight: 900;
+  color: var(--Bright_blue);
+  font-weight: 900;
 }
 
 .data button {
-    width: 100%;
-    background-color: var(--Bright_blue);
-    color: white;
-    padding: 15px;
-    border-radius: 12px;
-    border: none;
-    font-weight: 700;
-    box-shadow: 0px 8px 9px 5px var(--Pale_blue);
+  width: 100%;
+  background-color: var(--Bright_blue);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0px 8px 9px 5px var(--Pale_blue);
 }
 
 .data p:last-child {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 @media screen and (max-width: 450px) {
-
-    .card {
-        width: 90vw;
-    }
+  .card {
+    width: 90vw;
+  }
 }
-
 
 @media screen and (max-width: 375px) {
-    body {
-        background: url('images/pattern-background-mobile.svg') no-repeat;
-    }
+  body {
+    background: url("images/pattern-background-mobile.svg") no-repeat;
+  }
 
-    .data {
-        padding: 25px 20px; 
-}
+  .data {
+    padding: 25px 20px;
+  }
 }
